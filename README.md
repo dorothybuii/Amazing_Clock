@@ -1,3 +1,3 @@
 # Amazing Clock :)
 
-URL:: //...
+URL:: https://dorothybuii.github.io/Amazing_Clock
