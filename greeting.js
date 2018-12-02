@@ -8,11 +8,9 @@ function enrollThecoolKids() {
     txt.value = ''
 
     var list = document.querySelector('.cool-list')
-    var tmpDiv = document.createElement('div')
-    var element = document.createTextNode(name)
-    // element.value = name
+    var paragraph = document.createElement('p')
+    paragraph.innerText = ` ${name} ❤️${getTime()}`
 
-    tmpDiv.appendChild(element)
-    list.appendChild(tmpDiv)
+    list.appendChild(paragraph)
   })
 }
