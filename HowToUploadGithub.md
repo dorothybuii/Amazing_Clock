@@ -15,4 +15,4 @@ to add your email to github
 
 * git commit --> opens to a new window but don't be alarmed!
 * i --> INSERT mode
-![What you will see](/images/picture1.jpg)
+![What you will see](./images/picture1.jpg)
