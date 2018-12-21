@@ -1,30 +1,28 @@
-const COORDS = 'coords';
+const COORDS = "coords";
 
 function handleGeoSuccess(position) {
-console.log(position);
+  console.log(position);
 }
 
 function handleGeoError() {
-console.log("Cant access geo location");
+  console.log("Cant access geo location");
 }
 
 function askForCoords() {
-navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError)
+  navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError);
 }
 
 function loadCoords() {
-const loadedCords = localStorage.getItem(COORDS);
-if(loadedCords === null) {
- askForCoords();
-} else {
- // get Weather
-}
+  const loadedCords = localStorage.getItem(COORDS);
+  if (loadedCords === null) {
+    askForCoords();
+  } else {
+    // get Weather
+  }
 }
 
-function init(){
-loadCoords();
-
+function init() {
+  loadCoords();
 }
 
 init();
-
